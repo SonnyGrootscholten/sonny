@@ -26,7 +26,7 @@ const Index = () => {
         </div>
 
         {/* SONNY Logo - Bottom Center */}
-        <div className="mt-auto">
+        <div className="fixed bottom-8 left-1/2 -translate-x-1/2">
           <img 
             src={sonnyLogo} 
             alt="SONNY" 
