@@ -11,8 +11,8 @@ const Store = () => {
         </p>
 
         {/* Copyright */}
-        <footer className="mt-auto pb-8 w-full">
-          <p className="text-xs font-normal tracking-tight text-black uppercase text-right">
+        <footer className="fixed bottom-8 right-8">
+          <p className="text-xs font-normal tracking-tight text-black uppercase">
             ©SONNY 2O26. ALL RIGHTS RESERVED
           </p>
         </footer>
