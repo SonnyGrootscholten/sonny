@@ -1,12 +1,13 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { X } from "lucide-react";
 
 const menuItems = [
-  { label: "MUSIC", href: "#music" },
-  { label: "LIVE", href: "#live" },
-  { label: "STORE", href: "#store" },
-  { label: "ABOUT", href: "#about" },
-  { label: "CONTACT", href: "#contact" },
+  { label: "MUSIC", href: "#music", isExternal: false },
+  { label: "LIVE", href: "#live", isExternal: false },
+  { label: "STORE", href: "#store", isExternal: false },
+  { label: "ABOUT", href: "#about", isExternal: false },
+  { label: "CONTACT", href: "/contact", isExternal: true },
 ];
 
 export const SlideOutMenu = () => {
@@ -41,14 +42,25 @@ export const SlideOutMenu = () => {
         {/* Menu Items */}
         <nav className="flex flex-col justify-center h-full px-12 space-y-8">
           {menuItems.map((item) => (
-            <a
-              key={item.label}
-              href={item.href}
-              onClick={() => setIsOpen(false)}
-              className="text-2xl font-extralight tracking-ultra text-foreground hover:opacity-50 transition-opacity duration-luxury"
-            >
-              {item.label}
-            </a>
+            item.isExternal ? (
+              <Link
+                key={item.label}
+                to={item.href}
+                onClick={() => setIsOpen(false)}
+                className="text-2xl font-extralight tracking-ultra text-foreground hover:opacity-50 transition-opacity duration-luxury"
+              >
+                {item.label}
+              </Link>
+            ) : (
+              <a
+                key={item.label}
+                href={item.href}
+                onClick={() => setIsOpen(false)}
+                className="text-2xl font-extralight tracking-ultra text-foreground hover:opacity-50 transition-opacity duration-luxury"
+              >
+                {item.label}
+              </a>
+            )
           ))}
         </nav>
       </div>
