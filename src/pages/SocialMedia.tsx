@@ -37,6 +37,14 @@ const SocialMedia = () => {
           </div>
           <div>
             <a 
+              href="#" 
+              className="text-sm font-normal tracking-tight text-black hover:opacity-50 transition-opacity duration-luxury uppercase"
+            >
+              YOUTUBE
+            </a>
+          </div>
+          <div>
+            <a 
               href="https://www.instagram.com/sonny/" 
               target="_blank" 
               rel="noopener noreferrer" 
