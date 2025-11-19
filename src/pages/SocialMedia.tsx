@@ -17,6 +17,13 @@ const SocialMedia = () => {
             INSTAGRAM
           </a>
         </section>
+
+        {/* Copyright */}
+        <footer className="mt-auto pt-12">
+          <p className="text-sm font-normal tracking-tight text-black uppercase">
+            ©SONNY 2O26. ALL RIGHTS RESERVED
+          </p>
+        </footer>
       </main>
     </div>
   );
