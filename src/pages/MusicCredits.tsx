@@ -13,9 +13,6 @@ const MusicCredits = () => {
           <h2 className="text-sm font-bold tracking-tight text-black mb-1 uppercase">
             CREDITS
           </h2>
-          <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
-            PRODUCTION, COLLABORATIONS & SONGWRITING
-          </p>
         </section>
 
         {/* Song Credits */}
