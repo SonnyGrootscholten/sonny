@@ -1,5 +1,6 @@
 import { SlideOutMenu } from "@/components/SlideOutMenu";
 import sonnyPortrait from "@/assets/sonny-portrait.jpg";
+import sonnyLogo from "@/assets/sonny-logo.svg";
 
 const Index = () => {
   return (
@@ -22,11 +23,13 @@ const Index = () => {
           />
         </div>
 
-        {/* SONNY Wordmark - Bottom Center */}
+        {/* SONNY Logo - Bottom Center */}
         <div className="mt-auto">
-          <h1 className="text-4xl md:text-5xl font-extralight tracking-ultra text-foreground">
-            SONNY
-          </h1>
+          <img 
+            src={sonnyLogo} 
+            alt="SONNY" 
+            className="h-12 w-auto"
+          />
         </div>
       </main>
 
