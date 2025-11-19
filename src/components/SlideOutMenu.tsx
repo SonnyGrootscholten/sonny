@@ -48,14 +48,14 @@ export const SlideOutMenu = () => {
         </button>
 
         {/* Menu Items */}
-        <nav className="flex flex-col pt-24 px-12 space-y-3">
+        <nav className="flex flex-col pt-24 px-12 space-y-2">
           {menuItems.map((item) => (
             item.isExternal ? (
               <Link
                 key={item.label}
                 to={item.href}
                 onClick={() => setIsOpen(false)}
-                className={`text-sm tracking-tight text-foreground hover:opacity-50 transition-opacity duration-luxury ${
+                className={`text-sm tracking-wide text-foreground hover:opacity-50 transition-opacity duration-luxury ${
                   isActive(item.href) ? "font-bold" : "font-normal"
                 }`}
               >
@@ -66,7 +66,7 @@ export const SlideOutMenu = () => {
                 key={item.label}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
-                className="text-sm font-normal tracking-tight text-foreground hover:opacity-50 transition-opacity duration-luxury"
+                className="text-sm font-normal tracking-wide text-foreground hover:opacity-50 transition-opacity duration-luxury"
               >
                 {item.label}
               </a>
