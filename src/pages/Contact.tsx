@@ -9,6 +9,9 @@ const Contact = () => {
           <h2 className="text-sm font-bold tracking-tight text-black mb-1 uppercase">
             CONTACT
           </h2>
+          <h3 className="text-sm font-bold tracking-tight text-black mb-1 uppercase">
+            GENERAL
+          </h3>
           <p className="text-sm font-normal tracking-tight text-black leading-tight">
             FOR ALL GENERAL ENQUIRIES
           </p>
