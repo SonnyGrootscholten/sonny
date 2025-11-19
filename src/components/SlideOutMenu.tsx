@@ -41,7 +41,7 @@ export const SlideOutMenu = () => {
         {/* Close Button */}
         <button
           onClick={() => setIsOpen(false)}
-          className="absolute top-8 right-8 p-2 text-foreground hover:opacity-50 transition-opacity duration-luxury"
+          className="absolute top-8 right-8 p-2 text-black hover:opacity-50 transition-opacity duration-luxury"
           aria-label="Close menu"
         >
           <X size={24} strokeWidth={1} />
@@ -55,7 +55,7 @@ export const SlideOutMenu = () => {
                 key={item.label}
                 to={item.href}
                 onClick={() => setIsOpen(false)}
-                className={`text-sm tracking-wide text-foreground hover:opacity-50 transition-opacity duration-luxury ${
+                className={`text-sm tracking-wide text-black hover:opacity-50 transition-opacity duration-luxury ${
                   isActive(item.href) ? "font-bold" : "font-normal"
                 }`}
               >
@@ -66,7 +66,7 @@ export const SlideOutMenu = () => {
                 key={item.label}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
-                className="text-sm font-normal tracking-wide text-foreground hover:opacity-50 transition-opacity duration-luxury"
+                className="text-sm font-normal tracking-wide text-black hover:opacity-50 transition-opacity duration-luxury"
               >
                 {item.label}
               </a>
