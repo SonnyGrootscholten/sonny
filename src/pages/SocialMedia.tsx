@@ -17,7 +17,7 @@ const SocialMedia = () => {
         <section className="mb-8 space-y-4">
           <div>
             <a 
-              href="#" 
+              href="https://music.apple.com/nl/artist/sonny/1848925614" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-sm font-normal tracking-tight text-black hover:opacity-50 transition-opacity duration-luxury uppercase"
@@ -27,22 +27,12 @@ const SocialMedia = () => {
           </div>
           <div>
             <a 
-              href="#" 
+              href="https://open.spotify.com/artist/1VjCBOU41mHsqh6cH3VeIJ?si=lp9uV1VOTuyGbezIalo45w" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-sm font-normal tracking-tight text-black hover:opacity-50 transition-opacity duration-luxury uppercase"
             >
               SPOTIFY
-            </a>
-          </div>
-          <div>
-            <a 
-              href="#" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="text-sm font-normal tracking-tight text-black hover:opacity-50 transition-opacity duration-luxury uppercase"
-            >
-              YOUTUBE
             </a>
           </div>
           <div>
