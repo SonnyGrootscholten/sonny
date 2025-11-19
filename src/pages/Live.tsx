@@ -1,8 +1,6 @@
 import { SlideOutMenu } from "@/components/SlideOutMenu";
-
 const Live = () => {
-  return (
-    <div className="relative min-h-screen bg-white flex flex-col items-center justify-center overflow-hidden">
+  return <div className="relative min-h-screen bg-white flex flex-col items-center justify-center overflow-hidden">
       <SlideOutMenu />
       
       <main className="flex flex-col items-start flex-1 w-full px-8 py-20 max-w-2xl">
@@ -50,7 +48,7 @@ const Live = () => {
                 TBA
               </p>
               <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
-                BERLIN, DE
+                TOKYO, JP 
               </p>
             </div>
             <a href="#" className="text-sm font-normal tracking-tight text-black hover:opacity-50 transition-opacity duration-luxury uppercase">
@@ -66,8 +64,6 @@ const Live = () => {
           </p>
         </footer>
       </main>
-    </div>
-  );
+    </div>;
 };
-
 export default Live;
