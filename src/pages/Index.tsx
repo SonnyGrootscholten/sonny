@@ -43,10 +43,32 @@ const Index = () => {
     }
   }, []);
 
-  const getParallaxOffset = (index: number) => {
-    const baseSpeed = 0.3;
-    const speedVariation = (index % 3) * 0.15;
-    return scrollProgress * (baseSpeed + speedVariation) * 100;
+
+  const getImageOpacity = (index: number) => {
+    const totalImages = images.length;
+    const scrollPerImage = 1 / totalImages;
+    const imageStart = index * scrollPerImage;
+    const imageEnd = (index + 1) * scrollPerImage;
+    const fadeZone = 0.15;
+
+    if (scrollProgress < imageStart - fadeZone) return 0;
+    if (scrollProgress > imageEnd + fadeZone) return 0;
+    if (scrollProgress < imageStart) {
+      return (scrollProgress - (imageStart - fadeZone)) / fadeZone;
+    }
+    if (scrollProgress > imageEnd) {
+      return 1 - (scrollProgress - imageEnd) / fadeZone;
+    }
+    return 1;
+  };
+
+  const getImageScale = (index: number) => {
+    const totalImages = images.length;
+    const scrollPerImage = 1 / totalImages;
+    const imageCenter = (index + 0.5) * scrollPerImage;
+    const distance = Math.abs(scrollProgress - imageCenter);
+    const scale = 1 - distance * 0.15;
+    return Math.max(0.85, Math.min(1.05, scale));
   };
 
   return (
@@ -54,33 +76,53 @@ const Index = () => {
       <SlideOutMenu />
       <SearchBar />
       
-      {/* Scrollable Photo Carousel */}
-      <main ref={mainRef} className="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth">
-        {images.map((image, index) => (
-          <section
-            key={index}
-            className="h-screen w-full snap-start snap-always flex items-center justify-center px-8"
-          >
-            <img
-              src={image}
-              alt="SONNY"
-              className="w-full h-auto object-contain"
-              style={{
-                maxHeight: "70vh",
-                opacity: 0,
-                animation: "fadeIn 1.2s ease-out forwards",
-                transform: `translateY(${getParallaxOffset(index)}px)`,
-                transition: "transform 0.1s linear"
-              }}
-            />
-          </section>
-        ))}
+      {/* Layered Flowing Carousel */}
+      <main ref={mainRef} className="h-screen overflow-y-scroll scroll-smooth">
+        <div className="relative" style={{ height: `${images.length * 120}vh` }}>
+          {images.map((image, index) => {
+            const opacity = getImageOpacity(index);
+            const scale = getImageScale(index);
+            const parallaxSpeed = 0.5 + (index % 3) * 0.2;
+            const yOffset = scrollProgress * parallaxSpeed * 200;
+            const zIndex = images.length - Math.abs(Math.floor(scrollProgress * images.length) - index);
+
+            return (
+              <div
+                key={index}
+                className="fixed inset-0 flex items-center justify-center px-8 transition-all duration-500"
+                style={{
+                  opacity,
+                  zIndex,
+                  pointerEvents: opacity > 0.3 ? 'auto' : 'none'
+                }}
+              >
+                <div
+                  className="relative w-full h-full flex items-center justify-center group cursor-pointer"
+                  style={{
+                    transform: `translateY(${yOffset}px) scale(${scale})`,
+                    transition: 'transform 0.6s cubic-bezier(0.16, 1, 0.3, 1)'
+                  }}
+                >
+                  <img
+                    src={image}
+                    alt="SONNY"
+                    className="w-full h-auto object-contain transition-all duration-700 ease-out group-hover:scale-105"
+                    style={{
+                      maxHeight: "75vh",
+                      filter: `brightness(${0.9 + opacity * 0.1}) contrast(${1 + opacity * 0.05})`
+                    }}
+                  />
+                </div>
+              </div>
+            );
+          })}
+        </div>
       </main>
 
       {/* SONNY Logo - Bottom Center */}
       <div className="fixed left-1/2 -translate-x-1/2 pointer-events-none" style={{
         bottom: "32px",
-        zIndex: 50
+        zIndex: 9999
       }}>
         <img 
           src={sonnyLogo} 
@@ -91,24 +133,14 @@ const Index = () => {
       </div>
 
       <style>{`
-        @keyframes fadeIn {
-          from {
-            opacity: 0;
-            transform: translateY(20px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-        
         main {
           scroll-behavior: smooth;
           -webkit-overflow-scrolling: touch;
         }
         
-        section {
-          transition: opacity 0.6s ease-in-out;
+        main::-webkit-scrollbar {
+          width: 0;
+          display: none;
         }
       `}</style>
     </div>
