@@ -1,5 +1,6 @@
 import { SlideOutMenu } from "@/components/SlideOutMenu";
 import gravityArtwork from "@/assets/gravity-artwork.jpg";
+import heinekenArtwork from "@/assets/heineken-artwork.png";
 
 const MusicCredits = () => {
   return (
@@ -46,9 +47,11 @@ const MusicCredits = () => {
 
         <section className="mb-8">
           <div className="flex gap-6 items-start">
-            <div className="w-32 h-32 bg-gray-200 flex-shrink-0 flex items-center justify-center">
-              <span className="text-xs text-gray-400 uppercase">Artwork</span>
-            </div>
+            <img 
+              src={heinekenArtwork} 
+              alt="Heineken Ibiza Final artwork" 
+              className="w-32 h-32 object-cover flex-shrink-0"
+            />
             <div>
               <h3 className="text-sm font-bold tracking-tight text-black mb-1 uppercase">
                 HEINEKEN × UEFA CHAMPIONS LEAGUE "IBIZA FINAL" COMMERCIAL
