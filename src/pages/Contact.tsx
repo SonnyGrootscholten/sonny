@@ -13,7 +13,7 @@ const Contact = () => {
 
         {/* General Section */}
         <section className="mb-8">
-          <h3 className="text-sm font-bold tracking-tight text-black mb-1 uppercase">
+          <h3 className="text-sm font-bold text-black mb-1 uppercase">
             GENERAL
           </h3>
           <p className="text-sm font-normal tracking-tight text-black leading-tight">
@@ -29,7 +29,7 @@ const Contact = () => {
 
         {/* Press Section */}
         <section className="mb-8">
-          <h2 className="text-sm font-bold tracking-tight text-black mb-1 uppercase">
+          <h2 className="text-sm font-bold text-black mb-1 uppercase">
             PRESS
           </h2>
           <a href="mailto:press@sonnyworld.com" className="text-sm font-normal tracking-tight text-black hover:opacity-50 transition-opacity duration-luxury">
@@ -39,7 +39,7 @@ const Contact = () => {
 
         {/* Human Resources Section */}
         <section className="mb-8">
-          <h2 className="text-sm font-bold tracking-tight text-black mb-1 uppercase">MANAGEMENT</h2>
+          <h2 className="text-sm font-bold text-black mb-1 uppercase">MANAGEMENT</h2>
           <a href="mailto:hr@sonnyworld.com" className="text-sm font-normal tracking-tight text-black hover:opacity-50 transition-opacity duration-luxury">
             MANAGEMENT@SONNYWORLD.COM
           </a>
