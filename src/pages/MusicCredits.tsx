@@ -1,6 +1,7 @@
 import { SlideOutMenu } from "@/components/SlideOutMenu";
 import gravityArtwork from "@/assets/gravity-artwork.jpg";
 import heinekenArtwork from "@/assets/heineken-artwork.png";
+import thirdpartyArtwork from "@/assets/thirdparty-artwork.jpg";
 
 const MusicCredits = () => {
   return (
@@ -86,9 +87,11 @@ const MusicCredits = () => {
 
         <section className="mb-8">
           <div className="flex gap-6 items-start">
-            <div className="w-32 h-32 bg-gray-200 flex-shrink-0 flex items-center justify-center">
-              <span className="text-xs text-gray-400 uppercase">Artwork</span>
-            </div>
+            <img 
+              src={thirdpartyArtwork} 
+              alt="Third Party & Sem Vox - Never Let You Go artwork" 
+              className="w-32 h-32 object-cover flex-shrink-0"
+            />
             <div>
               <h3 className="text-sm font-bold tracking-tight text-black mb-1 uppercase">
                 THIRD PARTY & SEM VOX – NEVER LET YOU GO
