@@ -6,9 +6,33 @@ const MusicCredits = () => {
       <SlideOutMenu />
       
       <main className="flex flex-col items-start flex-1 w-full px-8 py-20 max-w-2xl">
-        <p className="text-sm font-normal tracking-tight text-black leading-relaxed uppercase">
-          COMING SOON.
-        </p>
+        {/* Credits Section */}
+        <section className="mb-8">
+          <h2 className="text-sm font-bold tracking-tight text-black mb-1 uppercase">
+            CREDITS
+          </h2>
+          <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
+            PRODUCTION, COLLABORATIONS & SONGWRITING
+          </p>
+        </section>
+
+        {/* Song Credits */}
+        <section className="mb-8">
+          <h3 className="text-sm font-bold tracking-tight text-black mb-1 uppercase">
+            MARTIN GARRIX & SEM VOX FEAT. JAIMES - GRAVITY
+          </h3>
+          <div className="space-y-0.5">
+            <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
+              CO-WRITER
+            </p>
+            <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
+              CO-PRODUCER
+            </p>
+            <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
+              RELEASED ON STMPD RCRDS (2024)
+            </p>
+          </div>
+        </section>
 
         {/* Copyright */}
         <footer className="mt-auto pb-8">
