@@ -8,6 +8,7 @@ const menuItems = [
   { label: "LIVE", href: "#live", isExternal: false },
   { label: "STORE", href: "#store", isExternal: false },
   { label: "ABOUT", href: "#about", isExternal: false },
+  { label: "SOCIAL MEDIA", href: "#social-media", isExternal: false },
   { label: "CONTACT", href: "/contact", isExternal: true },
 ];
 
