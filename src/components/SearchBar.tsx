@@ -26,7 +26,7 @@ export const SearchBar = () => {
             if (!searchQuery) setIsExpanded(false);
           }}
           placeholder=""
-          className={`bg-transparent border-b border-black text-black text-xs tracking-wide placeholder:text-black/50 focus:outline-none transition-all duration-500 font-normal ${
+          className={`bg-transparent border-b border-black text-black text-xs tracking-wide placeholder:text-black/50 focus:outline-none transition-all duration-500 font-normal normal-case ${
             isExpanded ? "w-64" : "w-32"
           }`}
           style={{ 
