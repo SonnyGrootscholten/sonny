@@ -25,7 +25,7 @@ const Index = () => {
           <img 
             src={sonnyLogo} 
             alt="SONNY" 
-            className="h-8 w-auto"
+            className="h-16 w-auto"
             style={{ display: "block" }}
           />
         </div>
