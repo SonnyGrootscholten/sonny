@@ -22,7 +22,12 @@ const Index = () => {
         <div className="fixed left-1/2 -translate-x-1/2" style={{
         bottom: "32px"
       }}>
-          
+          <img 
+            src={sonnyLogo} 
+            alt="SONNY" 
+            className="h-8 w-auto"
+            style={{ display: "block" }}
+          />
         </div>
       </main>
 
