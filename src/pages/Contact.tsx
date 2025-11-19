@@ -13,9 +13,9 @@ const Contact = () => {
 
         {/* General Section */}
         <section className="mb-8">
-          <h3 className="text-sm font-bold text-black mb-1 uppercase">
+          <h2 className="text-sm font-bold text-black mb-1 uppercase">
             GENERAL
-          </h3>
+          </h2>
           <p className="text-sm font-normal tracking-tight text-black leading-tight">
             FOR ALL GENERAL ENQUIRIES
           </p>
