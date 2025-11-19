@@ -2,8 +2,10 @@ import { SlideOutMenu } from "@/components/SlideOutMenu";
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { useToast } from "@/hooks/use-toast";
 
 const SignUp = () => {
+  const { toast } = useToast();
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [firstName, setFirstName] = useState("");
@@ -20,6 +22,20 @@ const SignUp = () => {
       lastName, 
       instagramUsername 
     });
+
+    // Show success message
+    toast({
+      title: "THANK YOU FOR SUBSCRIBING!",
+      description: "YOU'RE NOW SIGNED UP FOR FUTURE UPDATES FROM SONNY.",
+      duration: 5000,
+    });
+
+    // Clear form
+    setEmail("");
+    setPhoneNumber("");
+    setFirstName("");
+    setLastName("");
+    setInstagramUsername("");
   };
 
   return (
