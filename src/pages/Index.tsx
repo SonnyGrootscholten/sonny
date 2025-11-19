@@ -1,12 +1,47 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { SlideOutMenu } from "@/components/SlideOutMenu";
+import sonnyPortrait from "@/assets/sonny-portrait.jpg";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="relative min-h-screen bg-background flex flex-col items-center justify-center overflow-hidden">
+      <SlideOutMenu />
+      
+      {/* Main Content Container */}
+      <main className="flex flex-col items-center justify-center flex-1 w-full px-8 py-20">
+        {/* Hero Portrait */}
+        <div className="relative max-w-2xl w-full mb-16 animate-fade-in">
+          <img
+            src={sonnyPortrait}
+            alt="SONNY"
+            className="w-full h-auto object-contain"
+            style={{ 
+              maxHeight: "70vh",
+              opacity: 0,
+              animation: "fadeIn 1.2s ease-out forwards"
+            }}
+          />
+        </div>
+
+        {/* SONNY Wordmark - Bottom Center */}
+        <div className="mt-auto">
+          <h1 className="text-4xl md:text-5xl font-extralight tracking-ultra text-foreground">
+            SONNY
+          </h1>
+        </div>
+      </main>
+
+      <style>{`
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      `}</style>
     </div>
   );
 };

@@ -63,6 +63,16 @@ export default {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      letterSpacing: {
+        'wide': 'var(--letter-spacing-wide)',
+        'ultra': 'var(--letter-spacing-ultra)',
+      },
+      transitionDuration: {
+        'luxury': 'var(--transition-luxury)',
+      },
+      fontFamily: {
+        'sans': ['Work Sans', 'sans-serif'],
+      },
       keyframes: {
         "accordion-down": {
           from: {
