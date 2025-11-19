@@ -41,7 +41,7 @@ const MusicCredits = () => {
                   RELEASED ON STMPD RCRDS (2024)
                 </p>
                 <a 
-                  href="#" 
+                  href="https://STMPD.com/Gravity" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-sm font-normal tracking-tight text-black hover:opacity-50 transition-opacity duration-luxury inline-block mt-2 uppercase"
@@ -75,7 +75,7 @@ const MusicCredits = () => {
                   OFFICIAL SOUNDTRACK
                 </p>
                 <a 
-                  href="#" 
+                  href="https://www.youtube.com/watch?v=9Ge7a0n5ZXM" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-sm font-normal tracking-tight text-black hover:opacity-50 transition-opacity duration-luxury inline-block mt-2 uppercase"
