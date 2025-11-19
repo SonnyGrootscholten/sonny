@@ -1,7 +1,7 @@
 import { SlideOutMenu } from "@/components/SlideOutMenu";
 import { SearchBar } from "@/components/SearchBar";
 import sonnyPortrait from "@/assets/sonny-portrait.jpg";
-import sonnyLogo from "@/assets/sonny-logo.jpg";
+import sonnyLogo from "@/assets/sonny-logo.svg";
 
 const Index = () => {
   return (
