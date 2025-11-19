@@ -2,11 +2,11 @@ import { SlideOutMenu } from "@/components/SlideOutMenu";
 
 const Live = () => {
   return (
-    <div className="relative min-h-screen bg-background flex flex-col items-center justify-center overflow-hidden">
+    <div className="relative min-h-screen bg-white flex flex-col items-center justify-center overflow-hidden">
       <SlideOutMenu />
       
       <main className="flex flex-col items-start justify-center flex-1 w-full px-8 py-20 max-w-2xl">
-        <p className="text-sm font-normal tracking-tight text-foreground leading-relaxed uppercase">
+        <p className="text-sm font-normal tracking-tight text-black leading-relaxed uppercase">
           COMING SOON.
         </p>
       </main>
