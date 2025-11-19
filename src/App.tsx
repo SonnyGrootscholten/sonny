@@ -9,6 +9,7 @@ import SocialMedia from "./pages/SocialMedia";
 import About from "./pages/About";
 import Live from "./pages/Live";
 import Store from "./pages/Store";
+import SignUp from "./pages/SignUp";
 import SearchResults from "./pages/SearchResults";
 import MusicSonny from "./pages/MusicSonny";
 import MusicCredits from "./pages/MusicCredits";
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/live" element={<Live />} />
           <Route path="/store" element={<Store />} />
+          <Route path="/signup" element={<SignUp />} />
           <Route path="/search" element={<SearchResults />} />
           <Route path="/music/sonny" element={<MusicSonny />} />
           <Route path="/music/credits" element={<MusicCredits />} />
