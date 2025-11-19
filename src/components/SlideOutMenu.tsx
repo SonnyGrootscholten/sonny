@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { X } from "lucide-react";
 
 const menuItems = [
@@ -14,6 +14,12 @@ const menuItems = [
 
 export const SlideOutMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+  
+  const isActive = (href: string) => {
+    if (href === "/") return location.pathname === "/";
+    return location.pathname === href;
+  };
 
   return (
     <>
@@ -49,7 +55,9 @@ export const SlideOutMenu = () => {
                 key={item.label}
                 to={item.href}
                 onClick={() => setIsOpen(false)}
-                className="text-sm font-bold tracking-tight text-foreground hover:opacity-50 transition-opacity duration-luxury"
+                className={`text-sm tracking-tight text-foreground hover:opacity-50 transition-opacity duration-luxury ${
+                  isActive(item.href) ? "font-bold" : "font-normal"
+                }`}
               >
                 {item.label}
               </Link>
@@ -58,7 +66,7 @@ export const SlideOutMenu = () => {
                 key={item.label}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
-                className="text-sm font-bold tracking-tight text-foreground hover:opacity-50 transition-opacity duration-luxury"
+                className="text-sm font-normal tracking-tight text-foreground hover:opacity-50 transition-opacity duration-luxury"
               >
                 {item.label}
               </a>
