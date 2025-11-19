@@ -26,11 +26,12 @@ const Index = () => {
         </div>
 
         {/* SONNY Logo - Bottom Center */}
-        <div className="fixed bottom-8 left-1/2 -translate-x-1/2">
+        <div className="fixed left-1/2 -translate-x-1/2" style={{ bottom: "32px" }}>
           <img 
             src={sonnyLogo} 
             alt="SONNY" 
             className="h-12 w-auto"
+            style={{ display: "block" }}
           />
         </div>
       </main>
