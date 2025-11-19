@@ -9,11 +9,11 @@ const Contact = () => {
           <h2 className="text-sm font-bold tracking-wide text-black mb-0.5">
             CONTACT
           </h2>
-          <p className="text-sm font-normal tracking-wide text-black leading-tight mb-0">
+          <p className="text-sm font-normal tracking-wide text-black leading-tight">
             FOR ALL GENERAL ENQUIRIES
           </p>
-          <p className="text-sm font-normal tracking-wide text-black leading-tight mb-0">
-            PLEASE CONTACT    
+          <p className="text-sm font-normal tracking-wide text-black leading-tight">
+            PLEASE CONTACT    
           </p>
           <a href="mailto:commercial@sonnyworld.com" className="text-sm font-normal tracking-wide text-black hover:opacity-50 transition-opacity duration-luxury">
             CONTACT@SONNYWORLD.COM
