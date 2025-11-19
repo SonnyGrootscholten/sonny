@@ -9,6 +9,7 @@ import SocialMedia from "./pages/SocialMedia";
 import About from "./pages/About";
 import Live from "./pages/Live";
 import Store from "./pages/Store";
+import SearchResults from "./pages/SearchResults";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/live" element={<Live />} />
           <Route path="/store" element={<Store />} />
+          <Route path="/search" element={<SearchResults />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
