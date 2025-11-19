@@ -6,16 +6,55 @@ const SocialMedia = () => {
       <SlideOutMenu />
       
       <main className="flex flex-col items-start flex-1 w-full px-8 py-20 max-w-2xl">
-        {/* Instagram Section */}
-        <section className="mb-12">
-          <a 
-            href="https://www.instagram.com/sonny/" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="text-sm font-normal tracking-tight text-black hover:opacity-50 transition-opacity duration-luxury"
-          >
-            INSTAGRAM
-          </a>
+        {/* Header */}
+        <section className="mb-8">
+          <h2 className="text-sm font-bold tracking-tight text-black mb-1 uppercase">
+            SOCIAL MEDIA
+          </h2>
+        </section>
+
+        {/* Social Media Links */}
+        <section className="mb-8 space-y-4">
+          <div>
+            <a 
+              href="#" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-sm font-normal tracking-tight text-black hover:opacity-50 transition-opacity duration-luxury uppercase"
+            >
+              APPLE MUSIC
+            </a>
+          </div>
+          <div>
+            <a 
+              href="#" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-sm font-normal tracking-tight text-black hover:opacity-50 transition-opacity duration-luxury uppercase"
+            >
+              SPOTIFY
+            </a>
+          </div>
+          <div>
+            <a 
+              href="#" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-sm font-normal tracking-tight text-black hover:opacity-50 transition-opacity duration-luxury uppercase"
+            >
+              YOUTUBE
+            </a>
+          </div>
+          <div>
+            <a 
+              href="https://www.instagram.com/sonny/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-sm font-normal tracking-tight text-black hover:opacity-50 transition-opacity duration-luxury uppercase"
+            >
+              INSTAGRAM
+            </a>
+          </div>
         </section>
 
         {/* Copyright */}
