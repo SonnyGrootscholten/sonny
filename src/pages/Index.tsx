@@ -28,7 +28,7 @@ const Index = () => {
       <SearchBar />
       
       {/* Scrollable Photo Carousel */}
-      <main className="h-screen overflow-y-scroll snap-y snap-mandatory">
+      <main className="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth">
         {images.map((image, index) => (
           <section
             key={index}
@@ -71,6 +71,15 @@ const Index = () => {
             opacity: 1;
             transform: translateY(0);
           }
+        }
+        
+        main {
+          scroll-behavior: smooth;
+          -webkit-overflow-scrolling: touch;
+        }
+        
+        section {
+          transition: opacity 0.6s ease-in-out;
         }
       `}</style>
     </div>
