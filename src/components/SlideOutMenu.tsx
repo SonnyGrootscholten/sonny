@@ -19,7 +19,7 @@ export const SlideOutMenu = () => {
       {/* Menu Button - Fixed Left */}
       <button
         onClick={() => setIsOpen(true)}
-        className="fixed top-8 left-8 z-40 px-6 py-3 border border-foreground bg-background text-foreground text-xs tracking-ultra uppercase transition-all duration-luxury hover:bg-foreground hover:text-background"
+        className="fixed top-8 left-8 z-40 px-4 py-2 border border-foreground bg-foreground text-background text-xs tracking-ultra uppercase transition-all duration-luxury hover:opacity-80"
         aria-label="Open menu"
       >
         MENU
