@@ -23,6 +23,13 @@ const About = () => {
             From intimate clubs to vast festival arenas, Sonny's performances embody a rare blend of precision and emotion, captivating audiences around the world. As his journey unfolds, he continues to push his creative limits — shaping a sound and live experience that evolve with each new chapter.
           </p>
         </div>
+
+        {/* Copyright */}
+        <footer className="mt-auto pt-12">
+          <p className="text-sm font-normal tracking-tight text-black uppercase">
+            ©SONNY 2O26. ALL RIGHTS RESERVED
+          </p>
+        </footer>
       </main>
     </div>
   );
