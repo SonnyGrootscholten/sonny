@@ -84,6 +84,35 @@ const MusicCredits = () => {
           </div>
         </section>
 
+        <section className="mb-8">
+          <div className="flex gap-6 items-start">
+            <div className="w-32 h-32 bg-gray-200 flex-shrink-0 flex items-center justify-center">
+              <span className="text-xs text-gray-400 uppercase">Artwork</span>
+            </div>
+            <div>
+              <h3 className="text-sm font-bold tracking-tight text-black mb-1 uppercase">
+                THIRD PARTY & SEM VOX – NEVER LET YOU GO
+              </h3>
+              <div className="space-y-0.5">
+                <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
+                  CO-WRITER
+                </p>
+                <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
+                  CO-PRODUCER
+                </p>
+                <a 
+                  href="#" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-sm font-normal tracking-tight text-black hover:opacity-50 transition-opacity duration-luxury inline-block mt-2 uppercase"
+                >
+                  LISTEN
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Copyright */}
         <footer className="mt-auto pb-8">
           <p className="text-sm font-normal tracking-tight text-black uppercase">
