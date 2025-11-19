@@ -8,7 +8,7 @@ const About = () => {
       <main className="flex flex-col items-start flex-1 w-full px-8 py-20 max-w-2xl">
         {/* Header */}
         <section className="mb-8">
-          <h2 className="text-sm font-bold tracking-tight text-black mb-1 uppercase">
+          <h2 className="text-sm font-bold text-black mb-1 uppercase">
             ABOUT
           </h2>
         </section>
