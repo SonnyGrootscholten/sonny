@@ -48,7 +48,7 @@ export const SlideOutMenu = () => {
         </button>
 
         {/* Menu Items */}
-        <nav className="flex flex-col pt-24 px-12 space-y-2">
+        <nav className="flex flex-col pt-24 px-12 space-y-1.5">
           {menuItems.map((item) => (
             item.isExternal ? (
               <Link
