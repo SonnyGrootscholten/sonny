@@ -55,7 +55,7 @@ export const SlideOutMenu = () => {
                 key={item.label}
                 to={item.href}
                 onClick={() => setIsOpen(false)}
-                className={`text-xs tracking-wide text-foreground hover:opacity-50 transition-opacity duration-luxury ${
+                className={`text-sm tracking-wide text-foreground hover:opacity-50 transition-opacity duration-luxury ${
                   isActive(item.href) ? "font-bold" : "font-normal"
                 }`}
               >
@@ -66,7 +66,7 @@ export const SlideOutMenu = () => {
                 key={item.label}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
-                className="text-xs font-normal tracking-wide text-foreground hover:opacity-50 transition-opacity duration-luxury"
+                className="text-sm font-normal tracking-wide text-foreground hover:opacity-50 transition-opacity duration-luxury"
               >
                 {item.label}
               </a>
