@@ -20,6 +20,9 @@ const Live = () => {
                 TBA
               </p>
               <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
+                TBA
+              </p>
+              <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
                 AMSTERDAM, NL
               </p>
             </div>
@@ -30,6 +33,9 @@ const Live = () => {
 
           <div className="flex justify-between items-start border-b border-black/10 pb-4">
             <div>
+              <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
+                TBA
+              </p>
               <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
                 TBA
               </p>
@@ -48,6 +54,9 @@ const Live = () => {
                 TBA
               </p>
               <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
+                TBA
+              </p>
+              <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
                 TOKYO, JP 
               </p>
             </div>
@@ -58,6 +67,9 @@ const Live = () => {
 
           <div className="flex justify-between items-start border-b border-black/10 pb-4">
             <div>
+              <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
+                TBA
+              </p>
               <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
                 TBA
               </p>
@@ -76,6 +88,9 @@ const Live = () => {
                 TBA
               </p>
               <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
+                TBA
+              </p>
+              <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
                 IBIZA, ES
               </p>
             </div>
@@ -90,6 +105,9 @@ const Live = () => {
                 TBA
               </p>
               <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
+                TBA
+              </p>
+              <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
                 IBIZA, ES
               </p>
             </div>
@@ -100,6 +118,9 @@ const Live = () => {
 
           <div className="flex justify-between items-start border-b border-black/10 pb-4">
             <div>
+              <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
+                TBA
+              </p>
               <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
                 TBA
               </p>
