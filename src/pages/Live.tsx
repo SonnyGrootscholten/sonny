@@ -48,7 +48,63 @@ const Live = () => {
                 TBA
               </p>
               <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
-                TOKYO, JP 
+                TOKYO, JP 
+              </p>
+            </div>
+            <a href="#" className="text-sm font-normal tracking-tight text-black hover:opacity-50 transition-opacity duration-luxury uppercase">
+              INFO
+            </a>
+          </div>
+
+          <div className="flex justify-between items-start border-b border-black/10 pb-4">
+            <div>
+              <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
+                TBA
+              </p>
+              <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
+                NEW YORK, US
+              </p>
+            </div>
+            <a href="#" className="text-sm font-normal tracking-tight text-black hover:opacity-50 transition-opacity duration-luxury uppercase">
+              INFO
+            </a>
+          </div>
+
+          <div className="flex justify-between items-start border-b border-black/10 pb-4">
+            <div>
+              <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
+                TBA
+              </p>
+              <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
+                IBIZA, ES
+              </p>
+            </div>
+            <a href="#" className="text-sm font-normal tracking-tight text-black hover:opacity-50 transition-opacity duration-luxury uppercase">
+              INFO
+            </a>
+          </div>
+
+          <div className="flex justify-between items-start border-b border-black/10 pb-4">
+            <div>
+              <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
+                TBA
+              </p>
+              <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
+                IBIZA, ES
+              </p>
+            </div>
+            <a href="#" className="text-sm font-normal tracking-tight text-black hover:opacity-50 transition-opacity duration-luxury uppercase">
+              INFO
+            </a>
+          </div>
+
+          <div className="flex justify-between items-start border-b border-black/10 pb-4">
+            <div>
+              <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
+                TBA
+              </p>
+              <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
+                OSLO, NO
               </p>
             </div>
             <a href="#" className="text-sm font-normal tracking-tight text-black hover:opacity-50 transition-opacity duration-luxury uppercase">
