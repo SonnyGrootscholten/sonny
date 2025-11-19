@@ -82,7 +82,7 @@ const MusicCredits = () => {
                 <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
                   DLDK MUSIC / ARMADA MUSIC (2016)
                 </p>
-                <a href="#" target="_blank" rel="noopener noreferrer" className="text-sm font-normal tracking-tight text-black hover:opacity-50 transition-opacity duration-luxury inline-block mt-2 uppercase">
+                <a href="https://www.youtube.com/watch?v=haO0ftO1TZI" target="_blank" rel="noopener noreferrer" className="text-sm font-normal tracking-tight text-black hover:opacity-50 transition-opacity duration-luxury inline-block mt-2 uppercase">
                   LISTEN
                 </a>
               </div>
