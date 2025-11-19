@@ -103,6 +103,9 @@ const MusicCredits = () => {
                 <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
                   CO-PRODUCER
                 </p>
+                <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
+                  DLDK MUSIC / ARMADA MUSIC (2016)
+                </p>
                 <a 
                   href="#" 
                   target="_blank" 
