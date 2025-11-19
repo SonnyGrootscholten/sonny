@@ -3,9 +3,8 @@ import { X } from "lucide-react";
 
 const menuItems = [
   { label: "MUSIC", href: "#music" },
-  { label: "VIDEO", href: "#video" },
   { label: "LIVE", href: "#live" },
-  { label: "MERCH", href: "#merch" },
+  { label: "STORE", href: "#store" },
   { label: "ABOUT", href: "#about" },
   { label: "CONTACT", href: "#contact" },
 ];
