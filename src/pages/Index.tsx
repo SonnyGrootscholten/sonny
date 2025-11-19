@@ -78,7 +78,15 @@ const Index = () => {
       
       {/* Layered Flowing Carousel */}
       <main ref={mainRef} className="h-screen overflow-y-scroll scroll-smooth">
-        <div className="relative" style={{ height: `${images.length * 120}vh` }}>
+        {/* Scroll trigger sections */}
+        <div className="relative">
+          {images.map((_, index) => (
+            <div key={`trigger-${index}`} className="h-screen w-full" />
+          ))}
+        </div>
+        
+        {/* Fixed overlay images */}
+        <div className="fixed inset-0 pointer-events-none" style={{ zIndex: 1 }}>
           {images.map((image, index) => {
             const opacity = getImageOpacity(index);
             const scale = getImageScale(index);
@@ -89,7 +97,7 @@ const Index = () => {
             return (
               <div
                 key={index}
-                className="fixed inset-0 flex items-center justify-center px-8 transition-all duration-500"
+                className="absolute inset-0 flex items-center justify-center px-8 transition-all duration-500 pointer-events-auto"
                 style={{
                   opacity,
                   zIndex,
