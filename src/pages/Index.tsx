@@ -24,9 +24,7 @@ const Index = () => {
   ];
 
   const [scrollProgress, setScrollProgress] = useState(0);
-  const [visibleImages, setVisibleImages] = useState<Set<number>>(new Set());
   const mainRef = useRef<HTMLDivElement>(null);
-  const imageRefs = useRef<(HTMLElement | null)[]>([]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -45,36 +43,6 @@ const Index = () => {
     }
   }, []);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          const index = parseInt(entry.target.getAttribute('data-index') || '0');
-          setVisibleImages((prev) => {
-            const newSet = new Set(prev);
-            if (entry.isIntersecting) {
-              newSet.add(index);
-            } else {
-              newSet.delete(index);
-            }
-            return newSet;
-          });
-        });
-      },
-      {
-        root: mainRef.current,
-        threshold: [0, 0.25, 0.5, 0.75, 1],
-        rootMargin: '-10% 0px -10% 0px'
-      }
-    );
-
-    imageRefs.current.forEach((ref) => {
-      if (ref) observer.observe(ref);
-    });
-
-    return () => observer.disconnect();
-  }, []);
-
   const getParallaxOffset = (index: number) => {
     const baseSpeed = 0.3;
     const speedVariation = (index % 3) * 0.15;
@@ -91,8 +59,6 @@ const Index = () => {
         {images.map((image, index) => (
           <section
             key={index}
-            ref={(el) => (imageRefs.current[index] = el)}
-            data-index={index}
             className="h-screen w-full snap-start snap-always flex items-center justify-center px-8"
           >
             <img
@@ -101,9 +67,10 @@ const Index = () => {
               className="w-full h-auto object-contain"
               style={{
                 maxHeight: "70vh",
-                opacity: visibleImages.has(index) ? 1 : 0.3,
+                opacity: 0,
+                animation: "fadeIn 1.2s ease-out forwards",
                 transform: `translateY(${getParallaxOffset(index)}px)`,
-                transition: "opacity 0.8s ease-out, transform 0.1s linear"
+                transition: "transform 0.1s linear"
               }}
             />
           </section>
