@@ -5,7 +5,7 @@ const About = () => {
     <div className="relative min-h-screen bg-white flex flex-col items-center justify-center overflow-hidden">
       <SlideOutMenu />
       
-      <main className="flex flex-col items-start justify-center flex-1 w-full px-8 py-20 max-w-2xl">
+      <main className="flex flex-col items-start flex-1 w-full px-8 py-20 max-w-2xl">
         <div className="space-y-6">
           <p className="text-sm font-normal tracking-tight text-black leading-relaxed uppercase">
             Originating from the Netherlands, Sonny represents a new generation of artists redefining the boundaries of modern dance music. Emerging from a country that shaped the global electronic scene, he channels its legacy through a deeply personal lens — merging design, architecture, and emotion into a singular artistic vision.
@@ -25,7 +25,7 @@ const About = () => {
         </div>
 
         {/* Copyright */}
-        <footer className="mt-auto pt-12">
+        <footer className="mt-auto">
           <p className="text-sm font-normal tracking-tight text-black uppercase">
             ©SONNY 2O26. ALL RIGHTS RESERVED
           </p>
