@@ -1,4 +1,5 @@
 import { SlideOutMenu } from "@/components/SlideOutMenu";
+import gravityArtwork from "@/assets/gravity-artwork.jpg";
 
 const MusicCredits = () => {
   return (
@@ -18,36 +19,52 @@ const MusicCredits = () => {
 
         {/* Song Credits */}
         <section className="mb-8">
-          <h3 className="text-sm font-bold tracking-tight text-black mb-1 uppercase">
-            MARTIN GARRIX & SEM VOX FEAT. JAIMES - GRAVITY
-          </h3>
-          <div className="space-y-0.5">
-            <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
-              CO-WRITER
-            </p>
-            <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
-              CO-PRODUCER
-            </p>
-            <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
-              RELEASED ON STMPD RCRDS (2024)
-            </p>
+          <div className="flex gap-6 items-start">
+            <img 
+              src={gravityArtwork} 
+              alt="Gravity artwork" 
+              className="w-32 h-32 object-cover flex-shrink-0"
+            />
+            <div>
+              <h3 className="text-sm font-bold tracking-tight text-black mb-1 uppercase">
+                MARTIN GARRIX & SEM VOX FEAT. JAIMES - GRAVITY
+              </h3>
+              <div className="space-y-0.5">
+                <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
+                  CO-WRITER
+                </p>
+                <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
+                  CO-PRODUCER
+                </p>
+                <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
+                  RELEASED ON STMPD RCRDS (2024)
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
         <section className="mb-8">
-          <h3 className="text-sm font-bold tracking-tight text-black mb-1 uppercase">
-            HEINEKEN × UEFA CHAMPIONS LEAGUE "IBIZA FINAL" COMMERCIAL
-          </h3>
-          <div className="space-y-0.5">
-            <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
-              CO-WRITER
-            </p>
-            <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
-              PRODUCER
-            </p>
-            <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
-              OFFICIAL SOUNDTRACK
-            </p>
+          <div className="flex gap-6 items-start">
+            <div className="w-32 h-32 bg-gray-200 flex-shrink-0 flex items-center justify-center">
+              <span className="text-xs text-gray-400 uppercase">Artwork</span>
+            </div>
+            <div>
+              <h3 className="text-sm font-bold tracking-tight text-black mb-1 uppercase">
+                HEINEKEN × UEFA CHAMPIONS LEAGUE "IBIZA FINAL" COMMERCIAL
+              </h3>
+              <div className="space-y-0.5">
+                <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
+                  CO-WRITER
+                </p>
+                <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
+                  PRODUCER
+                </p>
+                <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
+                  OFFICIAL SOUNDTRACK
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
