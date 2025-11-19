@@ -16,7 +16,7 @@ const Live = () => {
           {/* Tour Date Entry */}
           <div className="flex justify-between items-start border-b border-black/10 pb-4">
             <div>
-              <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
+              <p className="text-sm font-bold text-black leading-tight uppercase">
                 TBA
               </p>
               <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
@@ -33,7 +33,7 @@ const Live = () => {
 
           <div className="flex justify-between items-start border-b border-black/10 pb-4">
             <div>
-              <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
+              <p className="text-sm font-bold text-black leading-tight uppercase">
                 TBA
               </p>
               <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
@@ -50,7 +50,7 @@ const Live = () => {
 
           <div className="flex justify-between items-start border-b border-black/10 pb-4">
             <div>
-              <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
+              <p className="text-sm font-bold text-black leading-tight uppercase">
                 TBA
               </p>
               <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
@@ -67,7 +67,7 @@ const Live = () => {
 
           <div className="flex justify-between items-start border-b border-black/10 pb-4">
             <div>
-              <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
+              <p className="text-sm font-bold text-black leading-tight uppercase">
                 TBA
               </p>
               <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
@@ -84,7 +84,7 @@ const Live = () => {
 
           <div className="flex justify-between items-start border-b border-black/10 pb-4">
             <div>
-              <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
+              <p className="text-sm font-bold text-black leading-tight uppercase">
                 TBA
               </p>
               <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
@@ -101,7 +101,7 @@ const Live = () => {
 
           <div className="flex justify-between items-start border-b border-black/10 pb-4">
             <div>
-              <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
+              <p className="text-sm font-bold text-black leading-tight uppercase">
                 TBA
               </p>
               <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
@@ -118,7 +118,7 @@ const Live = () => {
 
           <div className="flex justify-between items-start border-b border-black/10 pb-4">
             <div>
-              <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
+              <p className="text-sm font-bold text-black leading-tight uppercase">
                 TBA
               </p>
               <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
