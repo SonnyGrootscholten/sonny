@@ -2,10 +2,8 @@ import { SlideOutMenu } from "@/components/SlideOutMenu";
 import { SearchBar } from "@/components/SearchBar";
 import sonnyPortrait from "@/assets/sonny-portrait.jpg";
 import sonnyLogo from "@/assets/sonny-logo.png";
-
 const Index = () => {
-  return (
-    <div className="relative min-h-screen bg-background flex flex-col items-center justify-center overflow-hidden">
+  return <div className="relative min-h-screen bg-background flex flex-col items-center justify-center overflow-hidden">
       <SlideOutMenu />
       <SearchBar />
       
@@ -13,26 +11,18 @@ const Index = () => {
       <main className="flex flex-col items-center justify-center flex-1 w-full px-8 py-20">
         {/* Hero Portrait */}
         <div className="relative max-w-2xl w-full mb-16 animate-fade-in">
-          <img
-            src={sonnyPortrait}
-            alt="SONNY"
-            className="w-full h-auto object-contain"
-            style={{ 
-              maxHeight: "70vh",
-              opacity: 0,
-              animation: "fadeIn 1.2s ease-out forwards"
-            }}
-          />
+          <img src={sonnyPortrait} alt="SONNY" className="w-full h-auto object-contain" style={{
+          maxHeight: "70vh",
+          opacity: 0,
+          animation: "fadeIn 1.2s ease-out forwards"
+        }} />
         </div>
 
         {/* SONNY Logo - Bottom Center */}
-        <div className="fixed left-1/2 -translate-x-1/2" style={{ bottom: "32px" }}>
-          <img 
-            src={sonnyLogo} 
-            alt="SONNY" 
-            className="h-12 w-auto"
-            style={{ display: "block" }}
-          />
+        <div className="fixed left-1/2 -translate-x-1/2" style={{
+        bottom: "32px"
+      }}>
+          
         </div>
       </main>
 
@@ -48,8 +38,6 @@ const Index = () => {
           }
         }
       `}</style>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
