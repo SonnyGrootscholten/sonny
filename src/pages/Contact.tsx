@@ -6,7 +6,7 @@ const Contact = () => {
       <main className="flex flex-col items-start justify-center flex-1 w-full px-8 py-20 max-w-2xl">
         {/* General Inquiries Section */}
         <section className="mb-12">
-          <h2 className="text-sm font-bold tracking-ultra text-foreground mb-3">
+          <h2 className="text-sm font-bold tracking-ultra text-foreground mb-1">
             GENERAL INQUIRIES
           </h2>
           <p className="text-sm font-light tracking-wide text-foreground leading-relaxed mb-1">
@@ -22,7 +22,7 @@ const Contact = () => {
 
         {/* Press Section */}
         <section className="mb-12">
-          <h2 className="text-sm font-bold tracking-ultra text-foreground mb-3">
+          <h2 className="text-sm font-bold tracking-ultra text-foreground mb-1">
             PRESS
           </h2>
           <a href="mailto:press@sonnyworld.com" className="text-sm font-light tracking-wide text-foreground hover:opacity-50 transition-opacity duration-luxury">
@@ -32,7 +32,7 @@ const Contact = () => {
 
         {/* Management Section */}
         <section className="mb-12">
-          <h2 className="text-sm font-bold tracking-ultra text-foreground mb-3">
+          <h2 className="text-sm font-bold tracking-ultra text-foreground mb-1">
             MANAGEMENT
           </h2>
           <a href="mailto:management@sonnyworld.com" className="text-sm font-light tracking-wide text-foreground hover:opacity-50 transition-opacity duration-luxury">
@@ -42,7 +42,7 @@ const Contact = () => {
 
         {/* Socials Section */}
         <section className="mb-12">
-          <h2 className="text-sm font-bold tracking-ultra text-foreground mb-3">
+          <h2 className="text-sm font-bold tracking-ultra text-foreground mb-1">
             SOCIALS
           </h2>
           <p className="text-sm font-light tracking-wide text-foreground leading-relaxed mb-1">
