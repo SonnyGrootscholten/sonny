@@ -4,11 +4,15 @@ const Contact = () => {
       <SlideOutMenu />
       
       <main className="flex flex-col items-start flex-1 w-full px-8 py-20 max-w-2xl">
-        {/* Commercial Section */}
+        {/* Header */}
         <section className="mb-8">
           <h2 className="text-sm font-bold tracking-tight text-black mb-1 uppercase">
             CONTACT
           </h2>
+        </section>
+
+        {/* General Section */}
+        <section className="mb-8">
           <h3 className="text-sm font-bold tracking-tight text-black mb-1 uppercase">
             GENERAL
           </h3>
