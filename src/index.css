@@ -9,7 +9,7 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 0 0% 0%;
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
@@ -17,11 +17,11 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 0 0% 100%;
+    --secondary-foreground: 0 0% 0%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
@@ -32,11 +32,15 @@ All colors MUST be HSL.
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 0 0% 0%;
+    --input: 0 0% 95%;
+    --ring: 0 0% 0%;
 
-    --radius: 0.5rem;
+    --radius: 0rem;
+    
+    --transition-luxury: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+    --letter-spacing-wide: 0.15em;
+    --letter-spacing-ultra: 0.25em;
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +104,11 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-['Work_Sans'] font-light antialiased;
+    letter-spacing: var(--letter-spacing-wide);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-extralight tracking-[0.25em];
   }
 }
