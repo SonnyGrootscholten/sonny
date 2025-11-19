@@ -7,7 +7,7 @@ const menuItems = [
   { label: "MUSIC", href: "#music", isExternal: false },
   { label: "LIVE", href: "#live", isExternal: false },
   { label: "STORE", href: "#store", isExternal: false },
-  { label: "ABOUT", href: "#about", isExternal: false },
+  { label: "ABOUT", href: "/about", isExternal: true },
   { label: "SOCIAL MEDIA", href: "/social-media", isExternal: true },
   { label: "CONTACT", href: "/contact", isExternal: true },
 ];
