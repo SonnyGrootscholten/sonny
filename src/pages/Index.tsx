@@ -1,4 +1,5 @@
 import { SlideOutMenu } from "@/components/SlideOutMenu";
+import { SearchBar } from "@/components/SearchBar";
 import sonnyPortrait from "@/assets/sonny-portrait.jpg";
 import sonnyLogo from "@/assets/sonny-logo.jpg";
 
@@ -6,6 +7,7 @@ const Index = () => {
   return (
     <div className="relative min-h-screen bg-background flex flex-col items-center justify-center overflow-hidden">
       <SlideOutMenu />
+      <SearchBar />
       
       {/* Main Content Container */}
       <main className="flex flex-col items-center justify-center flex-1 w-full px-8 py-20">
