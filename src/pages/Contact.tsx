@@ -9,13 +9,13 @@ const Contact = () => {
           <h2 className="text-sm font-bold tracking-ultra text-foreground mb-1">
             GENERAL INQUIRIES
           </h2>
-          <p className="text-sm font-light tracking-wide text-foreground leading-relaxed mb-1">
+          <p className="text-sm font-light tracking-tight text-foreground leading-relaxed mb-1">
             FOR ALL PARTNERSHIP ENQUIRIES
           </p>
-          <p className="text-sm font-light tracking-wide text-foreground leading-relaxed mb-1">
+          <p className="text-sm font-light tracking-tight text-foreground leading-relaxed mb-1">
             PLEASE CONTACT US AT
           </p>
-          <a href="mailto:contact@sonnyworld.com" className="text-sm font-light tracking-wide text-foreground hover:opacity-50 transition-opacity duration-luxury">
+          <a href="mailto:contact@sonnyworld.com" className="text-sm font-light tracking-tight text-foreground hover:opacity-50 transition-opacity duration-luxury">
             CONTACT@SONNYWORLD.COM
           </a>
         </section>
@@ -25,7 +25,7 @@ const Contact = () => {
           <h2 className="text-sm font-bold tracking-ultra text-foreground mb-1">
             PRESS
           </h2>
-          <a href="mailto:press@sonnyworld.com" className="text-sm font-light tracking-wide text-foreground hover:opacity-50 transition-opacity duration-luxury">
+          <a href="mailto:press@sonnyworld.com" className="text-sm font-light tracking-tight text-foreground hover:opacity-50 transition-opacity duration-luxury">
             PRESS@SONNYWORLD.COM
           </a>
         </section>
@@ -35,7 +35,7 @@ const Contact = () => {
           <h2 className="text-sm font-bold tracking-ultra text-foreground mb-1">
             MANAGEMENT
           </h2>
-          <a href="mailto:management@sonnyworld.com" className="text-sm font-light tracking-wide text-foreground hover:opacity-50 transition-opacity duration-luxury">
+          <a href="mailto:management@sonnyworld.com" className="text-sm font-light tracking-tight text-foreground hover:opacity-50 transition-opacity duration-luxury">
             MANAGEMENT@SONNYWORLD.COM
           </a>
         </section>
@@ -45,10 +45,10 @@ const Contact = () => {
           <h2 className="text-sm font-bold tracking-ultra text-foreground mb-1">
             SOCIALS
           </h2>
-          <p className="text-sm font-light tracking-wide text-foreground leading-relaxed mb-1">
+          <p className="text-sm font-light tracking-tight text-foreground leading-relaxed mb-1">
             FOR ALL ENQUIRIES
           </p>
-          <a href="https://instagram.com/sonny" target="_blank" rel="noopener noreferrer" className="text-sm font-light tracking-wide text-foreground hover:opacity-50 transition-opacity duration-luxury">
+          <a href="https://instagram.com/sonny" target="_blank" rel="noopener noreferrer" className="text-sm font-light tracking-tight text-foreground hover:opacity-50 transition-opacity duration-luxury">
             INSTAGRAM.COM/SONNY
           </a>
         </section>
