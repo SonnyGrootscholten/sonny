@@ -42,15 +42,9 @@ const Contact = () => {
 
         {/* Socials Section */}
         <section className="mb-12">
-          <h2 className="text-sm font-bold tracking-ultra text-foreground mb-1">
-            SOCIALS
-          </h2>
-          <p className="text-sm font-normal tracking-tight text-foreground leading-relaxed mb-1">
-            FOR ALL ENQUIRIES
-          </p>
-          <a href="https://instagram.com/sonny" target="_blank" rel="noopener noreferrer" className="text-sm font-normal tracking-tight text-foreground hover:opacity-50 transition-opacity duration-luxury">
-            INSTAGRAM.COM/SONNY
-          </a>
+          
+          
+          
         </section>
       </main>
     </div>;
