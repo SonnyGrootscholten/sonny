@@ -48,7 +48,7 @@ export const SlideOutMenu = () => {
                 key={item.label}
                 to={item.href}
                 onClick={() => setIsOpen(false)}
-                className="text-2xl font-extralight tracking-ultra text-foreground hover:opacity-50 transition-opacity duration-luxury"
+                className="text-xs font-extralight tracking-ultra text-foreground hover:opacity-50 transition-opacity duration-luxury"
               >
                 {item.label}
               </Link>
@@ -57,7 +57,7 @@ export const SlideOutMenu = () => {
                 key={item.label}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
-                className="text-2xl font-extralight tracking-ultra text-foreground hover:opacity-50 transition-opacity duration-luxury"
+                className="text-xs font-extralight tracking-ultra text-foreground hover:opacity-50 transition-opacity duration-luxury"
               >
                 {item.label}
               </a>
