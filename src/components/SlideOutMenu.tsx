@@ -4,7 +4,15 @@ import { X } from "lucide-react";
 
 const menuItems = [
   { label: "HOME", href: "/", isExternal: true },
-  { label: "MUSIC", href: "#music", isExternal: false },
+  { 
+    label: "MUSIC", 
+    href: "#music", 
+    isExternal: false,
+    submenu: [
+      { label: "SONNY", href: "/music/sonny" },
+      { label: "CREDITS", href: "/music/credits" }
+    ]
+  },
   { label: "LIVE", href: "/live", isExternal: true },
   { label: "STORE", href: "/store", isExternal: true },
   { label: "ABOUT", href: "/about", isExternal: true },
@@ -14,6 +22,7 @@ const menuItems = [
 
 export const SlideOutMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [musicSubmenuOpen, setMusicSubmenuOpen] = useState(false);
   const location = useLocation();
   
   const isActive = (href: string) => {
@@ -50,27 +59,43 @@ export const SlideOutMenu = () => {
         {/* Menu Items */}
         <nav className="flex flex-col pt-24 px-12 space-y-2">
           {menuItems.map((item) => (
-            item.isExternal ? (
-              <Link
-                key={item.label}
-                to={item.href}
-                onClick={() => setIsOpen(false)}
-                className={`text-sm tracking-wide text-black hover:opacity-50 transition-opacity duration-luxury ${
-                  isActive(item.href) ? "font-bold" : "font-normal"
-                }`}
-              >
-                {item.label}
-              </Link>
-            ) : (
-              <a
-                key={item.label}
-                href={item.href}
-                onClick={() => setIsOpen(false)}
-                className="text-sm font-normal tracking-wide text-black hover:opacity-50 transition-opacity duration-luxury"
-              >
-                {item.label}
-              </a>
-            )
+            <div key={item.label}>
+              {item.isExternal ? (
+                <Link
+                  to={item.href}
+                  onClick={() => setIsOpen(false)}
+                  className={`text-sm tracking-wide text-black hover:opacity-50 transition-opacity duration-luxury ${
+                    isActive(item.href) ? "font-bold" : "font-normal"
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              ) : (
+                <>
+                  <button
+                    onClick={() => setMusicSubmenuOpen(!musicSubmenuOpen)}
+                    className="text-sm font-normal tracking-wide text-black hover:opacity-50 transition-opacity duration-luxury text-left w-full"
+                  >
+                    {item.label}
+                  </button>
+                  
+                  {musicSubmenuOpen && item.submenu && (
+                    <div className="flex flex-col mt-2 ml-4 space-y-2">
+                      {item.submenu.map((subItem) => (
+                        <Link
+                          key={subItem.label}
+                          to={subItem.href}
+                          onClick={() => setIsOpen(false)}
+                          className="text-sm font-normal tracking-wide text-black hover:opacity-50 transition-opacity duration-luxury"
+                        >
+                          {subItem.label}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </>
+              )}
+            </div>
           ))}
         </nav>
       </div>
