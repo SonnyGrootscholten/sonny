@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { X } from "lucide-react";
 
 const menuItems = [
+  { label: "HOME", href: "/", isExternal: true },
   { label: "MUSIC", href: "#music", isExternal: false },
   { label: "LIVE", href: "#live", isExternal: false },
   { label: "STORE", href: "#store", isExternal: false },
