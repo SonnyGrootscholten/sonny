@@ -49,7 +49,7 @@ const Contact = () => {
         
         {/* Copyright */}
         <footer className="mt-auto pb-8">
-          <p className="text-sm font-normal tracking-tight text-black uppercase">
+          <p className="text-xs font-normal tracking-tight text-black uppercase">
             ©SONNY 2O26. ALL RIGHTS RESERVED
           </p>
         </footer>
