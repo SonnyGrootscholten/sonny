@@ -22,7 +22,7 @@ const Contact = () => {
           <p className="text-sm font-normal tracking-tight text-black leading-tight">
             PLEASE CONTACT    
           </p>
-          <a href="mailto:commercial@sonnyworld.com" className="text-sm font-normal tracking-tight text-black hover:opacity-50 transition-opacity duration-luxury">
+          <a href="mailto:contact@sonnyworld.com" className="text-sm font-normal tracking-tight text-black hover:opacity-50 transition-opacity duration-luxury">
             CONTACT@SONNYWORLD.COM
           </a>
         </section>
