@@ -13,8 +13,8 @@ import sonnyLogo from "@/assets/sonny-logo.png";
 
 const Index = () => {
   const images = [
-    sonnyPortrait,
     carousel1,
+    sonnyPortrait,
     carousel2,
     carousel3,
     carousel4,
