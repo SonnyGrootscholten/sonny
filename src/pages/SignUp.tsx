@@ -115,9 +115,7 @@ const SignUp = () => {
 
           {/* Consent Text */}
           <p className="text-xs font-normal tracking-tight text-black/60 leading-relaxed">
-            BY SUBMITTING MY INFO, I CONSENT TO RECEIVE RECURRING AUTOMATED MARKETING MESSAGES FROM SONNY. 
-            MSG & DATA RATES MAY APPLY. MSG FREQUENCY VARIES. REPLY STOP TO CANCEL, HELP FOR HELP. 
-            SMS WILL BE SENT BY LOVABLE. SEE{" "}
+            BY SUBMITTING MY INFO, I CONSENT TO RECEIVE RECURRING AUTOMATED MARKETING E-MAILS FROM SONNY. SEE{" "}
             <a href="#" className="underline hover:opacity-50 transition-opacity">
               TERMS OF SERVICE
             </a>
