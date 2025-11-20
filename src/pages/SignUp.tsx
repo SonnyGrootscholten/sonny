@@ -61,10 +61,10 @@ const SignUp = () => {
               id="email"
               type="email"
               value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="name@email.com"
+              onChange={(e) => setEmail(e.target.value.toUpperCase())}
+              placeholder="NAME@EMAIL.COM"
               required
-              className="w-full bg-white border border-black text-black text-sm tracking-tight placeholder:text-black/40 focus:ring-0 focus:border-black rounded-none h-12"
+              className="w-full bg-white border border-black text-black text-sm tracking-tight placeholder:text-black/40 focus:ring-0 focus:border-black rounded-none h-12 uppercase"
             />
           </div>
 
@@ -84,10 +84,10 @@ const SignUp = () => {
                 id="phone"
                 type="tel"
                 value={phoneNumber}
-                onChange={(e) => setPhoneNumber(e.target.value)}
+                onChange={(e) => setPhoneNumber(e.target.value.toUpperCase())}
                 placeholder="+31"
                 required
-                className="flex-1 bg-white border border-black text-black text-sm tracking-tight placeholder:text-black/40 focus:ring-0 focus:border-black rounded-none h-12"
+                className="flex-1 bg-white border border-black text-black text-sm tracking-tight placeholder:text-black/40 focus:ring-0 focus:border-black rounded-none h-12 uppercase"
               />
             </div>
           </div>
@@ -101,18 +101,18 @@ const SignUp = () => {
               <Input
                 type="text"
                 value={firstName}
-                onChange={(e) => setFirstName(e.target.value)}
-                placeholder="Jane"
+                onChange={(e) => setFirstName(e.target.value.toUpperCase())}
+                placeholder="JANE"
                 required
-                className="flex-1 bg-white border border-black text-black text-sm tracking-tight placeholder:text-black/40 focus:ring-0 focus:border-black rounded-none h-12"
+                className="flex-1 bg-white border border-black text-black text-sm tracking-tight placeholder:text-black/40 focus:ring-0 focus:border-black rounded-none h-12 uppercase"
               />
               <Input
                 type="text"
                 value={lastName}
-                onChange={(e) => setLastName(e.target.value)}
-                placeholder="Doe"
+                onChange={(e) => setLastName(e.target.value.toUpperCase())}
+                placeholder="DOE"
                 required
-                className="flex-1 bg-white border border-black text-black text-sm tracking-tight placeholder:text-black/40 focus:ring-0 focus:border-black rounded-none h-12"
+                className="flex-1 bg-white border border-black text-black text-sm tracking-tight placeholder:text-black/40 focus:ring-0 focus:border-black rounded-none h-12 uppercase"
               />
             </div>
           </div>
@@ -126,9 +126,9 @@ const SignUp = () => {
               id="instagram"
               type="text"
               value={instagramUsername}
-              onChange={(e) => setInstagramUsername(e.target.value)}
-              placeholder="@username"
-              className="w-full bg-white border border-black text-black text-sm tracking-tight placeholder:text-black/40 focus:ring-0 focus:border-black rounded-none h-12"
+              onChange={(e) => setInstagramUsername(e.target.value.toUpperCase())}
+              placeholder="@USERNAME"
+              className="w-full bg-white border border-black text-black text-sm tracking-tight placeholder:text-black/40 focus:ring-0 focus:border-black rounded-none h-12 uppercase"
             />
           </div>
 
