@@ -40,7 +40,7 @@ const Contact = () => {
         {/* Human Resources Section */}
         <section className="mb-8">
           <h2 className="text-sm font-bold text-black mb-1 uppercase">MANAGEMENT</h2>
-          <a href="mailto:hr@sonnyworld.com" className="text-sm font-normal tracking-tight text-black hover:opacity-50 transition-opacity duration-luxury">
+          <a href="mailto:management@sonnyworld.com" className="text-sm font-normal tracking-tight text-black hover:opacity-50 transition-opacity duration-luxury">
             MANAGEMENT@SONNYWORLD.COM
           </a>
         </section>
