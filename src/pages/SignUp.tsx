@@ -7,7 +7,6 @@ import { useToast } from "@/hooks/use-toast";
 const SignUp = () => {
   const { toast } = useToast();
   const [email, setEmail] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState("");
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [instagramUsername, setInstagramUsername] = useState("");
@@ -17,7 +16,6 @@ const SignUp = () => {
     // Data will be stored when Lovable Cloud is enabled
     console.log("Sign up for updates:", { 
       email, 
-      phoneNumber, 
       firstName, 
       lastName, 
       instagramUsername 
@@ -32,7 +30,6 @@ const SignUp = () => {
 
     // Clear form
     setEmail("");
-    setPhoneNumber("");
     setFirstName("");
     setLastName("");
     setInstagramUsername("");
@@ -66,30 +63,6 @@ const SignUp = () => {
               required
               className="w-full bg-white border border-black text-black text-sm tracking-tight placeholder:text-black/40 focus:ring-0 focus:border-black rounded-none h-12 uppercase"
             />
-          </div>
-
-          {/* Phone Number */}
-          <div className="space-y-2">
-            <label htmlFor="phone" className="text-sm font-normal text-black uppercase tracking-tight block">
-              PHONE NUMBER <span className="text-black/60">(REQUIRED)</span>
-            </label>
-            <div className="flex gap-2">
-              <select className="bg-white border border-black text-black text-sm tracking-tight focus:ring-0 focus:border-black rounded-none h-12 px-3 w-24">
-                <option value="+31">🇳🇱 +31</option>
-                <option value="+1">🇺🇸 +1</option>
-                <option value="+44">🇬🇧 +44</option>
-                <option value="+49">🇩🇪 +49</option>
-              </select>
-              <Input
-                id="phone"
-                type="tel"
-                value={phoneNumber}
-                onChange={(e) => setPhoneNumber(e.target.value.toUpperCase())}
-                placeholder="+31"
-                required
-                className="flex-1 bg-white border border-black text-black text-sm tracking-tight placeholder:text-black/40 focus:ring-0 focus:border-black rounded-none h-12 uppercase"
-              />
-            </div>
           </div>
 
           {/* First & Last Name */}
