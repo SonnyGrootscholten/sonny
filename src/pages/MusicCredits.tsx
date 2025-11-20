@@ -17,22 +17,22 @@ const MusicCredits = () => {
         {/* Song Credits */}
         <section className="mb-8">
           <div className="flex gap-6 items-start">
-            <img src={heinekenArtwork} alt="Heineken Ibiza Final artwork" className="w-32 h-32 object-cover flex-shrink-0" />
+            <img src={gravityArtwork} alt="Gravity artwork" className="w-32 h-32 object-cover flex-shrink-0" />
             <div>
               <h3 className="text-sm font-bold tracking-tight text-black mb-1 uppercase">
-                HEINEKEN × UEFA CHAMPIONS LEAGUE "IBIZA FINAL"         
+                MARTIN GARRIX & SEM VOX FEAT. JAIMES - GRAVITY
               </h3>
               <div className="space-y-0.5">
                 <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
                   CO-WRITER
                 </p>
                 <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
-                  PRODUCER
+                  CO-PRODUCER
                 </p>
                 <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
-                  HEINEKEN / UEFA (2015)         
+                  STMPD RCRDS (2024)
                 </p>
-                <a href="https://www.youtube.com/watch?v=9Ge7a0n5ZXM" target="_blank" rel="noopener noreferrer" className="text-sm font-normal tracking-tight text-black hover:opacity-50 transition-opacity duration-luxury inline-block mt-2 uppercase">
+                <a href="https://STMPD.com/Gravity" target="_blank" rel="noopener noreferrer" className="text-sm font-normal tracking-tight text-black hover:opacity-50 transition-opacity duration-luxury inline-block mt-2 uppercase">
                   LISTEN
                 </a>
               </div>
@@ -67,22 +67,22 @@ const MusicCredits = () => {
 
         <section className="mb-8">
           <div className="flex gap-6 items-start">
-            <img src={gravityArtwork} alt="Gravity artwork" className="w-32 h-32 object-cover flex-shrink-0" />
+            <img src={heinekenArtwork} alt="Heineken Ibiza Final artwork" className="w-32 h-32 object-cover flex-shrink-0" />
             <div>
               <h3 className="text-sm font-bold tracking-tight text-black mb-1 uppercase">
-                MARTIN GARRIX & SEM VOX FEAT. JAIMES - GRAVITY
+                HEINEKEN × UEFA CHAMPIONS LEAGUE "IBIZA FINAL"         
               </h3>
               <div className="space-y-0.5">
                 <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
                   CO-WRITER
                 </p>
                 <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
-                  CO-PRODUCER
+                  PRODUCER
                 </p>
                 <p className="text-sm font-normal tracking-tight text-black leading-tight uppercase">
-                  STMPD RCRDS (2024)
+                  HEINEKEN / UEFA (2015)         
                 </p>
-                <a href="https://STMPD.com/Gravity" target="_blank" rel="noopener noreferrer" className="text-sm font-normal tracking-tight text-black hover:opacity-50 transition-opacity duration-luxury inline-block mt-2 uppercase">
+                <a href="https://www.youtube.com/watch?v=9Ge7a0n5ZXM" target="_blank" rel="noopener noreferrer" className="text-sm font-normal tracking-tight text-black hover:opacity-50 transition-opacity duration-luxury inline-block mt-2 uppercase">
                   LISTEN
                 </a>
               </div>
