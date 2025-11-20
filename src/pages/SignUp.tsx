@@ -42,7 +42,7 @@ const SignUp = () => {
       <main className="flex flex-col items-start flex-1 w-full px-8 py-20 max-w-2xl">
         {/* Header */}
         <section className="mb-8">
-          <h2 className="text-sm font-bold text-black mb-1 uppercase tracking-tight">
+          <h2 className="text-sm font-bold text-black mb-1 uppercase">
             SIGN UP FOR FUTURE UPDATES
           </h2>
         </section>
