@@ -13,14 +13,14 @@ import sonnyLogo from "@/assets/sonny-logo.png";
 
 const Index = () => {
   const images = [
+    carousel4,
     carousel1,
-    sonnyPortrait,
     carousel2,
     carousel3,
-    carousel4,
     carousel5,
     carousel6,
     carousel7,
+    sonnyPortrait,
   ];
 
   const [scrollProgress, setScrollProgress] = useState(0);
